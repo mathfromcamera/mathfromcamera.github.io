@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WolframAlpha From Image</title>
+    <script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <input type="search" onchange="newImage()" id="search">
+    <button id="photo" onclick="takePhoto()">Take photo!</button>
+    <img src="http://api.wolframalpha.com/v1/simple?appid=KUHEUJ-XVAHWYUTEQ&i=What+airplanes+are+flying+overhead%3F" alt="math" id="output">
+</body>
+    <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
+    <script src="main.js"></script>
+</html>
