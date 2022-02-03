@@ -41,7 +41,15 @@ let canvas;
 function setup() {
     canvas = createCanvas(400, 400);
     canvas.id('canvas');
-    capture = createCapture(VIDEO);
+    //capture = createCapture(VIDEO);
+    options = {
+        video: {
+            facingMode: {
+                exact: "environment"
+            }
+        }
+    }
+    capture = createCapture(options);
     capture.hide();
 }
 
