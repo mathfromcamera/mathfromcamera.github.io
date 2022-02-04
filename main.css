@@ -4,15 +4,15 @@ input {
 
 button {
     position: absolute;
-    left: 15%;
+    left: 30%;
 }
 
 img {
     position: absolute;
-    top: 45%;
+    top: 58%;
 }
 
 canvas {
     position: absolute;
-    top: 5%;
+    top: 6%;
 }

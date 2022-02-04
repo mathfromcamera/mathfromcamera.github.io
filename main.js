@@ -68,6 +68,7 @@ function takePhoto() {
 
 function draw() {
     background(0);
+    /*
     let img = copy(
         capture,
         0,
@@ -79,5 +80,6 @@ function draw() {
         width,
         (width * capture.height) / capture.width
     );
-    image(img, 0, 0, width, height);
+    */
+    image(capture, 0, 0, width, (width * capture.height) / capture.width);
 }
