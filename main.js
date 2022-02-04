@@ -39,7 +39,7 @@ let capture;
 let canvas;
 
 function setup() {
-    canvas = createCanvas(400, 400);
+    canvas = createCanvas(480, 360);
     canvas.id('canvas');
     //capture = createCapture(VIDEO);
     options = {
@@ -68,5 +68,16 @@ function takePhoto() {
 
 function draw() {
     background(0);
-    image(capture, 0, 0, width, (width * capture.height) / capture.width);
+    let img = copy(
+        capture,
+        0,
+        0,
+        40,
+        40,
+        0,
+        0,
+        width,
+        (width * capture.height) / capture.width
+    );
+    image(img, 0, 0, width, height);
 }
